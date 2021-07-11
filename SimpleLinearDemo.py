@@ -28,3 +28,14 @@ axes.set_xlabel('Height')
 axes.set_ylabel('Weight')
 
 plt.show()
+
+height = 14
+
+# Reshape the hight into an array
+new_height = np.reshape([height],(1, -1))
+
+# Pass the new height to the model so that a predicted weight can be infered
+weight = model.predict(new_height)[0]
+
+# Print the information back to the user
+print ( "If you see a penguin thats %.2f tall, you can expect it to be %.2f in weight." % (height, weight))
