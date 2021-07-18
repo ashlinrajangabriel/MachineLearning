@@ -23,6 +23,7 @@ print(vector.toarray())
 ##Then we predict the model
 #Generate accuracy report or confustion matrix with target and predicted
 
+#Key last note ,, if you wonder how we preprocessed the data its using this library vectorizer...  It removes punctuation by default, underscores and removes stopwords, perform lemmetaziation
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jul 18 13:12:43 2021
